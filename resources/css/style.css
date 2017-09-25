@@ -1,46 +1,102 @@
 /* Tag-based Styles */
-html {
+body {
 	font-family: Helvetica;
-	font-size: 22px:
+	font-size: 22px;
 	color: seashell;
 	background-color: black;
 	opacity: 0.9;
+	text-align: center;
 }
 
-h1 {
-
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
-
-/* class-based styles */
-.page-header {
+header {
 	position: fixed;
-	top: 0;
+	display: flex;
+	top: 0; /* needed to keep any background stuff from poking through */
 	z-index: 100;
 	height: 69px;	
 	width: 100%;
 	border-bottom: 1px solid seashell;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/* header links div */
+nav{
+	flex-grow: 1;
+	text-align: right;
+	background-color: black;
+	padding-right: 10px;
+}
+
+/* header links+text */
+nav span{
+	padding: 20px 10px;
+	display: inline-block;
+}
+
+h2, h3, h4 {
+	padding: 10px;
+	margin: 0; /*this shrank the vertical height to fit redline spec */
+}
+
+div {
+	display: block;
+}
+
+/* class-based styles */
+.page-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: black;
 }
 
+.page-header img{
+	height: 50px;
+	padding-left: 10px;
+}
+
+.logo {
+	display: flex;
+}
+
+#mission {
+	background-image: url(../img/img-mission-background.jpg);
+	display: table-cell;
+	width: 1200px;
+	height: 700px;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+	background-color: black;
+	display: inline-block;
+	width: 100%; 
+}
 
 .footer {
 
 }
 
 /* link styles */
-.footer a:link, .footer a:visited, .footer a:hover, .footer a:active{
-
+a:link, a:visited, a:hover, a:active{
+	text-decoration: underline;
+	color: seashell;
 }
 
-.header a:link, .header a:visited, .header a:hover, .header a:active {
 
-}
+
+/* CSS for debugging layout
+	border-style: dotted;
+	border-color: white;
+*/
