@@ -1,102 +1,97 @@
-/* Tag-based Styles */
+/* PAGE LEVEL STYLES */
 body {
-	font-family: Helvetica;
+	font-family: Helvetica, sans-serif;
 	font-size: 22px;
 	color: seashell;
 	background-color: black;
-	opacity: 0.9;
+/*	opacity: 0.9; /*Not sure if this belongs here or elsewhere in the CSS file. Whole page gets weirdly faded if used here */
+	margin: 0;
 	text-align: center;
 }
 
-header {
-	position: fixed;
-	display: flex;
-	top: 0; /* needed to keep any background stuff from poking through */
-	z-index: 100;
-	height: 69px;	
-	width: 100%;
-	border-bottom: 1px solid seashell;
-	justify-content: space-between;
-	align-items: center;
-}
-
-
-/* header links div */
-nav{
-	flex-grow: 1;
-	text-align: right;
-	background-color: black;
-	padding-right: 10px;
-}
-
-/* header links+text */
-nav span{
-	padding: 20px 10px;
-	display: inline-block;
-}
-
-h2, h3, h4 {
-	padding: 10px;
-	margin: 0; /*this shrank the vertical height to fit redline spec */
-}
-
-div {
-	display: block;
-}
-
-/* class-based styles */
-.page-header {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: black;
-}
-
-.page-header img{
-	height: 50px;
-	padding-left: 10px;
-}
-
-.logo {
-	display: flex;
-}
-
-#mission {
-	background-image: url(../img/img-mission-background.jpg);
-	display: table-cell;
-	width: 1200px;
-	height: 700px;
-	vertical-align: middle;
-	text-align: center;
-	margin: 0 auto;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.content {
-	background-color: black;
-	display: inline-block;
-	width: 100%; 
-}
-
-.footer {
-
-}
-
-/* link styles */
 a:link, a:visited, a:hover, a:active{
 	text-decoration: underline;
 	color: seashell;
 }
 
+h2, h3, h4 {
+	padding: 10px;
+	margin: 0; /*Note to self: this setting shrank the vertical height to fit redline spec */
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 
 
-/* CSS for debugging layout
+/* HEADER-LEVEL ENTITY */
+header {
+	  position: fixed;
+	  width: 100%;
+	  z-index: 1;
+	  height: 69px;
+	  background-color: black;
+	  border-bottom: 1px solid seashell;
+	  align-items: center;
+}
+
+header img {
+	height: 50px;
+	padding-left: 10px;
+}
+
+nav {
+	flex-grow: 1;
+	text-align: right;
+}
+
+nav span {
+	display: inline-block;
+	padding: 20px 10px;
+}
+
+/* MASTER CONTAINER */
+.master-container {
+	padding-top: 70px; /*need to offset the fixed header */
+	width: 1200px;
+	margin: auto;
+}
+
+/* OUR MISSION CONTAINER */
+#mission {
+	height: 700px;
+	background-image: url("../img/img-mission-background.jpg");
+	padding-top: 70px;
+	opacity: 0.9; /*using this setting here to drop image brightness */
+}
+
+#mission .content {
+margin: auto;
+background-color: black;
+width: 100%;
+}
+
+/* TEAS OF THE MONTH CONTAINER */
+
+
+
+/* LOCATIONS CONTAINER */
+
+
+
+/* CONTACT INFO CONTAINER */
+
+
+
+/* FOOTER CONTAINER */
+.footer {
+
+}
+
+
+/* USED FOR DEGBUGGING LAYOUTS
 	border-style: dotted;
 	border-color: white;
 */
