@@ -92,7 +92,7 @@ nav span {
 	opacity: 0.9; /*using this setting here to drop image brightness */
 }
 
-.product h5 {
+.product h4 {
   display: block;
   font-weight: bold;
   text-align: center;
@@ -100,16 +100,35 @@ nav span {
 
 
 /* LOCATIONS CONTAINER */
+#locations {
+	background-image: url("../img/img-locations-background.jpg");
+	height: 500px;
+	margin: auto;
+	padding-top: 70px;
+	opacity: 0.9;
+	width: 1200px;
+}
 
-
-
+.address {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 1.0;
+	background-color: black;
+	padding:10px;
+	margin: 20px;
+	flex-basis: 300px;
+}
 /* CONTACT INFO CONTAINER */
-
+.contact-info {
+	height: 200px;
+}
 
 
 /* FOOTER CONTAINER */
-.footer {
-
+footer {
+	padding-left: 20px;
+	text-align: left;
 }
 
 
