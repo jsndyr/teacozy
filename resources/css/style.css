@@ -68,13 +68,35 @@ nav span {
 }
 
 #mission .content {
-margin: auto;
-background-color: black;
-width: 100%;
+	margin: auto;
+	background-color: black;
+	width: 100%;
 }
 
 /* TEAS OF THE MONTH CONTAINER */
+#featured-tea {
+	width: 1000px;
+	height: 700px;
+	margin: auto;
+	padding-top: 70px;
+}
+.product { 
+	padding: 5px;
+}
 
+.product img {
+	display: block;
+	height: 200px;
+	widows: 300px;
+	margin: 10px;
+	opacity: 0.9; /*using this setting here to drop image brightness */
+}
+
+.product h5 {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
 
 
 /* LOCATIONS CONTAINER */
