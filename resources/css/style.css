@@ -103,10 +103,10 @@ nav span {
 #locations {
 	background-image: url("../img/img-locations-background.jpg");
 	height: 500px;
+	width: 1200px;
 	margin: auto;
 	padding-top: 70px;
 	opacity: 0.9;
-	width: 1200px;
 }
 
 .address {
@@ -119,8 +119,14 @@ nav span {
 	margin: 20px;
 	flex-basis: 300px;
 }
+
+.flex-container.div {
+	padding-top: 5px;
+}
+
+
 /* CONTACT INFO CONTAINER */
-.contact-info {
+#contact-info {
 	height: 200px;
 }
 
